@@ -1,15 +1,46 @@
 <!DOCTYPE html>
+<html lang = "en">
 <head>
+  <title>Telemedicine Portal</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  .header{
+    padding: 50px;
+    text-align: left;
+    background: #2d5ee3;
+    color: white;
+  }
+  .title{
+    font-size: 20px;
+  }
+  .topButton{
+    background-color: #2d5ee3;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px;
+  }
+
+  </style>
 </head>
 <body>
-  <div class="topbar">
-    <img src = "https://github.com/alecsunday/TelemedicineRepo/blob/master/smile.png" alt = "is this working">
-    <h1>Telemedicine Portal</h1>
-    <button type = "button">New Patients</button>
-    <button type = "button">Returning Patients</button>
-    <button type = "button">Administration</button>
+  <div class="header">
+    <h1 class = "title" style = "display: inline">Telemedicine</h1>
+    <div class = "buttonNavigation">
+      <button class = "button topButton">New Patients</button>
+      <button class = "button topButton">Returning Patients</button>
+      <button class = "button topButton">Administration</button>
+    </div>
   </div>
-  <div class = leftbar>
+
+  <div class = sidebar>
     <img src = "" alt = "Dr Name/Location">
     <button type = "button">Appointments</button>
     <button type = "button">Patients</button>

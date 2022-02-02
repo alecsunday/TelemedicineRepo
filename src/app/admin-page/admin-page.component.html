@@ -9,45 +9,81 @@
     margin: 0;
   }
   .header{
-    padding: 50px;
+    padding: 30px;
     text-align: left;
     background: #2d5ee3;
     color: white;
   }
   .title{
-    font-size: 20px;
+    font-size: 32px;
   }
-  .topButton{
+
+  .top-btn-group button{
     background-color: #2d5ee3;
     border: none;
     color: white;
     padding: 15px 25px;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     margin: 10px 10px;
+    margin-left: 120px;
+    transition-duration: 0.2s;
+    cursor: pointer;
   }
 
+  .top-btn-group button:hover{
+    border-radius: 8px;
+    background-color: Green;
+  }
+
+  .side-btn-group button{
+    display: block;
+    margin: 10px 10px;
+    margin-top: 60px;
+    padding: 12px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    border-radius: 8px;
+    width: 15%;
+  }
+
+  .side-btn-group button:hover{
+    font-weight: bold;
+    background-color: #636263;
+  }
+
+  .telemed-img{
+    padding-top: 25px;
+    width: 200px;
+    height: 250px;
+  }
   </style>
 </head>
 <body>
   <div class="header">
     <h1 class = "title" style = "display: inline">Telemedicine</h1>
-    <div class = "buttonNavigation">
-      <button class = "button topButton">New Patients</button>
-      <button class = "button topButton">Returning Patients</button>
-      <button class = "button topButton">Administration</button>
+    <div class = "top-btn-group" style = "display: inline">
+      <button class = "button newPatBtn">New Patients</button>
+      <button class = "button retPatBtn">Returning Patients</button>
+      <button class = "button adminBtn">Administration</button>
     </div>
   </div>
 
   <div class = sidebar>
-    <img src = "" alt = "Dr Name/Location">
-    <button type = "button">Appointments</button>
-    <button type = "button">Patients</button>
-    <button type = "button">Medication Requests</button>
-    <button type = "button">Upload Reports</button>
-    <button type = "button">Chats</button>
-    <button type = "button">Video Chat</button>
-    <button type = "button">Inbox</button>
+    <img class = "telemed-img" src = "https://khn.org/wp-content/uploads/sites/2/2020/12/telemedicine-01.jpg?w=1270" alt = "Dr Name/Location">
+    <div class = "side-btn-group">
+      <button class = "button sideButton">Appointments</button>
+      <button class = "button sideButton">Patients</button>
+      <button class = "button sideButton">Medication Requests</button>
+      <button class = "button sideButton">Upload Reports</button>
+      <button class = "button sideButton">Chats</button>
+      <button class = "button sideButton">Video Chat</button>
+      <button class = "button sideButton">Inbox</button>
+    </div> 
   </div>
+
+ 
+
 </body>
